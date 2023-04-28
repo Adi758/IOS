@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AFA616529C0BEB3002C9AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA616429C0BEB3002C9AA9 /* AppDelegate.swift */; };
+		4AFA616729C0BEB3002C9AA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA616629C0BEB3002C9AA9 /* SceneDelegate.swift */; };
+		4AFA616929C0BEB3002C9AA9 /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA616829C0BEB3002C9AA9 /* GalleryVC.swift */; };
+		4AFA616C29C0BEB3002C9AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFA616A29C0BEB3002C9AA9 /* Main.storyboard */; };
+		4AFA616E29C0BEB4002C9AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFA616D29C0BEB4002C9AA9 /* Assets.xcassets */; };
+		4AFA617129C0BEB4002C9AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFA616F29C0BEB4002C9AA9 /* LaunchScreen.storyboard */; };
+		4AFA617C29C0BEB4002C9AA9 /* PamidalaGalleryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA617B29C0BEB4002C9AA9 /* PamidalaGalleryAppTests.swift */; };
+		4AFA618629C0BEB4002C9AA9 /* PamidalaGalleryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA618529C0BEB4002C9AA9 /* PamidalaGalleryAppUITests.swift */; };
+		4AFA618829C0BEB4002C9AA9 /* PamidalaGalleryAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA618729C0BEB4002C9AA9 /* PamidalaGalleryAppUITestsLaunchTests.swift */; };
+		4AFA619729C0CF36002C9AA9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA619629C0CF36002C9AA9 /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AFA617829C0BEB4002C9AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AFA615929C0BEB3002C9AA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AFA616029C0BEB3002C9AA9;
+			remoteInfo = PamidalaGalleryApp;
+		};
+		4AFA618229C0BEB4002C9AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AFA615929C0BEB3002C9AA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AFA616029C0BEB3002C9AA9;
+			remoteInfo = PamidalaGalleryApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AFA616129C0BEB3002C9AA9 /* PamidalaGalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PamidalaGalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AFA616429C0BEB3002C9AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AFA616629C0BEB3002C9AA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4AFA616829C0BEB3002C9AA9 /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
+		4AFA616B29C0BEB3002C9AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AFA616D29C0BEB4002C9AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AFA617029C0BEB4002C9AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AFA617229C0BEB4002C9AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AFA617729C0BEB4002C9AA9 /* PamidalaGalleryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PamidalaGalleryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AFA617B29C0BEB4002C9AA9 /* PamidalaGalleryAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PamidalaGalleryAppTests.swift; sourceTree = "<group>"; };
+		4AFA618129C0BEB4002C9AA9 /* PamidalaGalleryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PamidalaGalleryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AFA618529C0BEB4002C9AA9 /* PamidalaGalleryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PamidalaGalleryAppUITests.swift; sourceTree = "<group>"; };
+		4AFA618729C0BEB4002C9AA9 /* PamidalaGalleryAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PamidalaGalleryAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AFA619629C0CF36002C9AA9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AFA615E29C0BEB3002C9AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AFA617429C0BEB4002C9AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AFA617E29C0BEB4002C9AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AFA615829C0BEB3002C9AA9 = {
+			isa = PBXGroup;
+			children = (
+				4AFA616329C0BEB3002C9AA9 /* PamidalaGalleryApp */,
+				4AFA617A29C0BEB4002C9AA9 /* PamidalaGalleryAppTests */,
+				4AFA618429C0BEB4002C9AA9 /* PamidalaGalleryAppUITests */,
+				4AFA616229C0BEB3002C9AA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AFA616229C0BEB3002C9AA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA616129C0BEB3002C9AA9 /* PamidalaGalleryApp.app */,
+				4AFA617729C0BEB4002C9AA9 /* PamidalaGalleryAppTests.xctest */,
+				4AFA618129C0BEB4002C9AA9 /* PamidalaGalleryAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AFA616329C0BEB3002C9AA9 /* PamidalaGalleryApp */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA616429C0BEB3002C9AA9 /* AppDelegate.swift */,
+				4AFA616629C0BEB3002C9AA9 /* SceneDelegate.swift */,
+				4AFA616829C0BEB3002C9AA9 /* GalleryVC.swift */,
+				4AFA616A29C0BEB3002C9AA9 /* Main.storyboard */,
+				4AFA619629C0CF36002C9AA9 /* Model.swift */,
+				4AFA616D29C0BEB4002C9AA9 /* Assets.xcassets */,
+				4AFA616F29C0BEB4002C9AA9 /* LaunchScreen.storyboard */,
+				4AFA617229C0BEB4002C9AA9 /* Info.plist */,
+			);
+			path = PamidalaGalleryApp;
+			sourceTree = "<group>";
+		};
+		4AFA617A29C0BEB4002C9AA9 /* PamidalaGalleryAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA617B29C0BEB4002C9AA9 /* PamidalaGalleryAppTests.swift */,
+			);
+			path = PamidalaGalleryAppTests;
+			sourceTree = "<group>";
+		};
+		4AFA618429C0BEB4002C9AA9 /* PamidalaGalleryAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA618529C0BEB4002C9AA9 /* PamidalaGalleryAppUITests.swift */,
+				4AFA618729C0BEB4002C9AA9 /* PamidalaGalleryAppUITestsLaunchTests.swift */,
+			);
+			path = PamidalaGalleryAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AFA616029C0BEB3002C9AA9 /* PamidalaGalleryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AFA618B29C0BEB4002C9AA9 /* Build configuration list for PBXNativeTarget "PamidalaGalleryApp" */;
+			buildPhases = (
+				4AFA615D29C0BEB3002C9AA9 /* Sources */,
+				4AFA615E29C0BEB3002C9AA9 /* Frameworks */,
+				4AFA615F29C0BEB3002C9AA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PamidalaGalleryApp;
+			productName = PamidalaGalleryApp;
+			productReference = 4AFA616129C0BEB3002C9AA9 /* PamidalaGalleryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AFA617629C0BEB4002C9AA9 /* PamidalaGalleryAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AFA618E29C0BEB4002C9AA9 /* Build configuration list for PBXNativeTarget "PamidalaGalleryAppTests" */;
+			buildPhases = (
+				4AFA617329C0BEB4002C9AA9 /* Sources */,
+				4AFA617429C0BEB4002C9AA9 /* Frameworks */,
+				4AFA617529C0BEB4002C9AA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AFA617929C0BEB4002C9AA9 /* PBXTargetDependency */,
+			);
+			name = PamidalaGalleryAppTests;
+			productName = PamidalaGalleryAppTests;
+			productReference = 4AFA617729C0BEB4002C9AA9 /* PamidalaGalleryAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AFA618029C0BEB4002C9AA9 /* PamidalaGalleryAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AFA619129C0BEB4002C9AA9 /* Build configuration list for PBXNativeTarget "PamidalaGalleryAppUITests" */;
+			buildPhases = (
+				4AFA617D29C0BEB4002C9AA9 /* Sources */,
+				4AFA617E29C0BEB4002C9AA9 /* Frameworks */,
+				4AFA617F29C0BEB4002C9AA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AFA618329C0BEB4002C9AA9 /* PBXTargetDependency */,
+			);
+			name = PamidalaGalleryAppUITests;
+			productName = PamidalaGalleryAppUITests;
+			productReference = 4AFA618129C0BEB4002C9AA9 /* PamidalaGalleryAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AFA615929C0BEB3002C9AA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4AFA616029C0BEB3002C9AA9 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					4AFA617629C0BEB4002C9AA9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4AFA616029C0BEB3002C9AA9;
+					};
+					4AFA618029C0BEB4002C9AA9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4AFA616029C0BEB3002C9AA9;
+					};
+				};
+			};
+			buildConfigurationList = 4AFA615C29C0BEB3002C9AA9 /* Build configuration list for PBXProject "PamidalaGalleryApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AFA615829C0BEB3002C9AA9;
+			productRefGroup = 4AFA616229C0BEB3002C9AA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AFA616029C0BEB3002C9AA9 /* PamidalaGalleryApp */,
+				4AFA617629C0BEB4002C9AA9 /* PamidalaGalleryAppTests */,
+				4AFA618029C0BEB4002C9AA9 /* PamidalaGalleryAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AFA615F29C0BEB3002C9AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFA617129C0BEB4002C9AA9 /* LaunchScreen.storyboard in Resources */,
+				4AFA616E29C0BEB4002C9AA9 /* Assets.xcassets in Resources */,
+				4AFA616C29C0BEB3002C9AA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AFA617529C0BEB4002C9AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AFA617F29C0BEB4002C9AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AFA615D29C0BEB3002C9AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFA616929C0BEB3002C9AA9 /* GalleryVC.swift in Sources */,
+				4AFA616529C0BEB3002C9AA9 /* AppDelegate.swift in Sources */,
+				4AFA616729C0BEB3002C9AA9 /* SceneDelegate.swift in Sources */,
+				4AFA619729C0CF36002C9AA9 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AFA617329C0BEB4002C9AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFA617C29C0BEB4002C9AA9 /* PamidalaGalleryAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AFA617D29C0BEB4002C9AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFA618829C0BEB4002C9AA9 /* PamidalaGalleryAppUITestsLaunchTests.swift in Sources */,
+				4AFA618629C0BEB4002C9AA9 /* PamidalaGalleryAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AFA617929C0BEB4002C9AA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AFA616029C0BEB3002C9AA9 /* PamidalaGalleryApp */;
+			targetProxy = 4AFA617829C0BEB4002C9AA9 /* PBXContainerItemProxy */;
+		};
+		4AFA618329C0BEB4002C9AA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AFA616029C0BEB3002C9AA9 /* PamidalaGalleryApp */;
+			targetProxy = 4AFA618229C0BEB4002C9AA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AFA616A29C0BEB3002C9AA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AFA616B29C0BEB3002C9AA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AFA616F29C0BEB4002C9AA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AFA617029C0BEB4002C9AA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AFA618929C0BEB4002C9AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AFA618A29C0BEB4002C9AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AFA618C29C0BEB4002C9AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PamidalaGalleryApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaGalleryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AFA618D29C0BEB4002C9AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PamidalaGalleryApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaGalleryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AFA618F29C0BEB4002C9AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaGalleryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PamidalaGalleryApp.app/PamidalaGalleryApp";
+			};
+			name = Debug;
+		};
+		4AFA619029C0BEB4002C9AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaGalleryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PamidalaGalleryApp.app/PamidalaGalleryApp";
+			};
+			name = Release;
+		};
+		4AFA619229C0BEB4002C9AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaGalleryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PamidalaGalleryApp;
+			};
+			name = Debug;
+		};
+		4AFA619329C0BEB4002C9AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaGalleryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PamidalaGalleryApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AFA615C29C0BEB3002C9AA9 /* Build configuration list for PBXProject "PamidalaGalleryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFA618929C0BEB4002C9AA9 /* Debug */,
+				4AFA618A29C0BEB4002C9AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AFA618B29C0BEB4002C9AA9 /* Build configuration list for PBXNativeTarget "PamidalaGalleryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFA618C29C0BEB4002C9AA9 /* Debug */,
+				4AFA618D29C0BEB4002C9AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AFA618E29C0BEB4002C9AA9 /* Build configuration list for PBXNativeTarget "PamidalaGalleryAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFA618F29C0BEB4002C9AA9 /* Debug */,
+				4AFA619029C0BEB4002C9AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AFA619129C0BEB4002C9AA9 /* Build configuration list for PBXNativeTarget "PamidalaGalleryAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFA619229C0BEB4002C9AA9 /* Debug */,
+				4AFA619329C0BEB4002C9AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AFA615929C0BEB3002C9AA9 /* Project object */;
+}

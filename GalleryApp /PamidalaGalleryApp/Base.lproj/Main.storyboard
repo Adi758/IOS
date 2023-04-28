@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GalleryVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GalleryVC" customModule="PamidalaGalleryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7p7-Qu-3Yz" userLabel="BigContainerSV">
+                                <rect key="frame" x="20" y="67" width="388" height="805"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J5t-yv-j0F" userLabel="SearchSV">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="59"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Keyword" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-Sf-uq9">
+                                                <rect key="frame" x="0.0" y="0.0" width="253.33333333333334" height="59"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="SearchKeyword:" destination="BYZ-38-t0r" eventType="editingChanged" id="u1d-9d-xrC"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0M4-ZH-8Y5">
+                                                <rect key="frame" x="261.33333333333331" y="0.0" width="126.66666666666669" height="59"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system" title="Search"/>
+                                                <connections>
+                                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zWi-7O-G8j"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jdA-Sf-uq9" firstAttribute="width" secondItem="0M4-ZH-8Y5" secondAttribute="width" multiplier="2" id="K0F-VM-qVg"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="L81-9u-KjD" userLabel="PictureSV">
+                                        <rect key="frame" x="0.0" y="68.666666666666657" width="388" height="419.66666666666663"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="X7o-0m-Nci" userLabel="LikeDislikeCommentSV">
+                                        <rect key="frame" x="0.0" y="497.66666666666657" width="388" height="84.333333333333314"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jaY-aL-Nu1" userLabel="likeDislikeSV">
+                                                <rect key="frame" x="0.0" y="0.0" width="388" height="38.333333333333336"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL9-XV-hfN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="38.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="👍"/>
+                                                        <connections>
+                                                            <action selector="like:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pj2-AY-0ru"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj6-Ly-cwy">
+                                                        <rect key="frame" x="198" y="0.0" width="190" height="38.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="👎"/>
+                                                        <connections>
+                                                            <action selector="dislike:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icW-vl-06j"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g9c-Tr-fca" userLabel="CommentsSV">
+                                                <rect key="frame" x="0.0" y="46.333333333333371" width="388" height="38"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o22-9x-cio">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="38"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO2-dM-pde">
+                                                        <rect key="frame" x="312" y="0.0" width="76" height="38"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                                        <connections>
+                                                            <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ls3-br-fI2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="KO2-dM-pde" firstAttribute="width" secondItem="o22-9x-cio" secondAttribute="width" multiplier="0.25" id="FcI-hG-UKq"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="mun-R1-85P" userLabel="Picture CommentsSV">
+                                        <rect key="frame" x="0.0" y="590" width="388" height="166.66666666666663"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U01-90-q9e">
+                                        <rect key="frame" x="0.0" y="764.66666666666663" width="388" height="40.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbg-R9-ecC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="U01-90-q9e" firstAttribute="height" secondItem="7p7-Qu-3Yz" secondAttribute="height" multiplier="0.05" id="nwG-kR-iBz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7p7-Qu-3Yz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2nj-l6-82k"/>
+                            <constraint firstItem="X7o-0m-Nci" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.1" id="8PU-Dr-BS8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7p7-Qu-3Yz" secondAttribute="trailing" constant="20" id="WJm-Qt-T11"/>
+                            <constraint firstItem="7p7-Qu-3Yz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WUQ-q9-0LL"/>
+                            <constraint firstItem="J5t-yv-j0F" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.07" id="YRr-1T-xx0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7p7-Qu-3Yz" secondAttribute="bottom" constant="20" id="kGm-62-1ln"/>
+                            <constraint firstItem="L81-9u-KjD" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="qgc-IF-wdC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentTF" destination="o22-9x-cio" id="rds-ac-RIt"/>
+                        <outlet property="dislikeBTN" destination="Dj6-Ly-cwy" id="l97-xV-dRq"/>
+                        <outlet property="likeBTN" destination="sL9-XV-hfN" id="ceq-Xg-DJi"/>
+                        <outlet property="pictureCommentsTV" destination="mun-R1-85P" id="TP7-Tb-7bk"/>
+                        <outlet property="pictureIV" destination="L81-9u-KjD" id="kXO-iQ-wUb"/>
+                        <outlet property="resetBTN" destination="U01-90-q9e" id="CQV-sa-dot"/>
+                        <outlet property="saveBTN" destination="KO2-dM-pde" id="kHb-kH-ynD"/>
+                        <outlet property="searchBTN" destination="0M4-ZH-8Y5" id="eq4-7c-KWm"/>
+                        <outlet property="searchTF" destination="jdA-Sf-uq9" id="VQr-aD-Dni"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="96"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
