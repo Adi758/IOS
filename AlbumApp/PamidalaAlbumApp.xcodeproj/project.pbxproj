@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A5ACF6B29D3651E0021CA9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5ACF6A29D3651E0021CA9A /* AppDelegate.swift */; };
+		4A5ACF6D29D3651E0021CA9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5ACF6C29D3651E0021CA9A /* SceneDelegate.swift */; };
+		4A5ACF6F29D3651E0021CA9A /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5ACF6E29D3651E0021CA9A /* RootVC.swift */; };
+		4A5ACF7229D3651E0021CA9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5ACF7029D3651E0021CA9A /* Main.storyboard */; };
+		4A5ACF7429D3651F0021CA9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5ACF7329D3651F0021CA9A /* Assets.xcassets */; };
+		4A5ACF7729D3651F0021CA9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5ACF7529D3651F0021CA9A /* LaunchScreen.storyboard */; };
+		4A5ACF8229D3651F0021CA9A /* PamidalaAlbumAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5ACF8129D3651F0021CA9A /* PamidalaAlbumAppTests.swift */; };
+		4A5ACF8C29D3651F0021CA9A /* PamidalaAlbumAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5ACF8B29D3651F0021CA9A /* PamidalaAlbumAppUITests.swift */; };
+		4A5ACF8E29D3651F0021CA9A /* PamidalaAlbumAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5ACF8D29D3651F0021CA9A /* PamidalaAlbumAppUITestsLaunchTests.swift */; };
+		4ADED35529D384A4002A480C /* AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADED35429D384A4002A480C /* AlbumVC.swift */; };
+		4ADED35729D384E5002A480C /* ImageDescVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADED35629D384E5002A480C /* ImageDescVC.swift */; };
+		4ADED35929D38527002A480C /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADED35829D38527002A480C /* model.swift */; };
+		741E87FF29D403100025E1F7 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E87FE29D403100025E1F7 /* PhotoView.swift */; };
+		741E880129D403290025E1F7 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741E880029D403290025E1F7 /* PhotoView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A5ACF7E29D3651F0021CA9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5ACF5F29D3651E0021CA9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A5ACF6629D3651E0021CA9A;
+			remoteInfo = PamidalaAlbumApp;
+		};
+		4A5ACF8829D3651F0021CA9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A5ACF5F29D3651E0021CA9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A5ACF6629D3651E0021CA9A;
+			remoteInfo = PamidalaAlbumApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A5ACF6729D3651E0021CA9A /* PamidalaAlbumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PamidalaAlbumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5ACF6A29D3651E0021CA9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A5ACF6C29D3651E0021CA9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A5ACF6E29D3651E0021CA9A /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		4A5ACF7129D3651E0021CA9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A5ACF7329D3651F0021CA9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A5ACF7629D3651F0021CA9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A5ACF7829D3651F0021CA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A5ACF7D29D3651F0021CA9A /* PamidalaAlbumAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PamidalaAlbumAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5ACF8129D3651F0021CA9A /* PamidalaAlbumAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PamidalaAlbumAppTests.swift; sourceTree = "<group>"; };
+		4A5ACF8729D3651F0021CA9A /* PamidalaAlbumAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PamidalaAlbumAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5ACF8B29D3651F0021CA9A /* PamidalaAlbumAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PamidalaAlbumAppUITests.swift; sourceTree = "<group>"; };
+		4A5ACF8D29D3651F0021CA9A /* PamidalaAlbumAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PamidalaAlbumAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4ADED35429D384A4002A480C /* AlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumVC.swift; sourceTree = "<group>"; };
+		4ADED35629D384E5002A480C /* ImageDescVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDescVC.swift; sourceTree = "<group>"; };
+		4ADED35829D38527002A480C /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		741E87FE29D403100025E1F7 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		741E880029D403290025E1F7 /* PhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A5ACF6429D3651E0021CA9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5ACF7A29D3651F0021CA9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5ACF8429D3651F0021CA9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A5ACF5E29D3651E0021CA9A = {
+			isa = PBXGroup;
+			children = (
+				4A5ACF6929D3651E0021CA9A /* PamidalaAlbumApp */,
+				4A5ACF8029D3651F0021CA9A /* PamidalaAlbumAppTests */,
+				4A5ACF8A29D3651F0021CA9A /* PamidalaAlbumAppUITests */,
+				4A5ACF6829D3651E0021CA9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A5ACF6829D3651E0021CA9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A5ACF6729D3651E0021CA9A /* PamidalaAlbumApp.app */,
+				4A5ACF7D29D3651F0021CA9A /* PamidalaAlbumAppTests.xctest */,
+				4A5ACF8729D3651F0021CA9A /* PamidalaAlbumAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A5ACF6929D3651E0021CA9A /* PamidalaAlbumApp */ = {
+			isa = PBXGroup;
+			children = (
+				4A5ACF6A29D3651E0021CA9A /* AppDelegate.swift */,
+				4A5ACF6C29D3651E0021CA9A /* SceneDelegate.swift */,
+				4A5ACF7029D3651E0021CA9A /* Main.storyboard */,
+				4A5ACF7329D3651F0021CA9A /* Assets.xcassets */,
+				4A5ACF7529D3651F0021CA9A /* LaunchScreen.storyboard */,
+				4A5ACF7829D3651F0021CA9A /* Info.plist */,
+				4A5ACF6E29D3651E0021CA9A /* RootVC.swift */,
+				4ADED35429D384A4002A480C /* AlbumVC.swift */,
+				4ADED35629D384E5002A480C /* ImageDescVC.swift */,
+				4ADED35829D38527002A480C /* model.swift */,
+				741E87FE29D403100025E1F7 /* PhotoView.swift */,
+				741E880029D403290025E1F7 /* PhotoView.xib */,
+			);
+			path = PamidalaAlbumApp;
+			sourceTree = "<group>";
+		};
+		4A5ACF8029D3651F0021CA9A /* PamidalaAlbumAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A5ACF8129D3651F0021CA9A /* PamidalaAlbumAppTests.swift */,
+			);
+			path = PamidalaAlbumAppTests;
+			sourceTree = "<group>";
+		};
+		4A5ACF8A29D3651F0021CA9A /* PamidalaAlbumAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A5ACF8B29D3651F0021CA9A /* PamidalaAlbumAppUITests.swift */,
+				4A5ACF8D29D3651F0021CA9A /* PamidalaAlbumAppUITestsLaunchTests.swift */,
+			);
+			path = PamidalaAlbumAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A5ACF6629D3651E0021CA9A /* PamidalaAlbumApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A5ACF9129D3651F0021CA9A /* Build configuration list for PBXNativeTarget "PamidalaAlbumApp" */;
+			buildPhases = (
+				4A5ACF6329D3651E0021CA9A /* Sources */,
+				4A5ACF6429D3651E0021CA9A /* Frameworks */,
+				4A5ACF6529D3651E0021CA9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PamidalaAlbumApp;
+			productName = PamidalaAlbumApp;
+			productReference = 4A5ACF6729D3651E0021CA9A /* PamidalaAlbumApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A5ACF7C29D3651F0021CA9A /* PamidalaAlbumAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A5ACF9429D3651F0021CA9A /* Build configuration list for PBXNativeTarget "PamidalaAlbumAppTests" */;
+			buildPhases = (
+				4A5ACF7929D3651F0021CA9A /* Sources */,
+				4A5ACF7A29D3651F0021CA9A /* Frameworks */,
+				4A5ACF7B29D3651F0021CA9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A5ACF7F29D3651F0021CA9A /* PBXTargetDependency */,
+			);
+			name = PamidalaAlbumAppTests;
+			productName = PamidalaAlbumAppTests;
+			productReference = 4A5ACF7D29D3651F0021CA9A /* PamidalaAlbumAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A5ACF8629D3651F0021CA9A /* PamidalaAlbumAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A5ACF9729D3651F0021CA9A /* Build configuration list for PBXNativeTarget "PamidalaAlbumAppUITests" */;
+			buildPhases = (
+				4A5ACF8329D3651F0021CA9A /* Sources */,
+				4A5ACF8429D3651F0021CA9A /* Frameworks */,
+				4A5ACF8529D3651F0021CA9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A5ACF8929D3651F0021CA9A /* PBXTargetDependency */,
+			);
+			name = PamidalaAlbumAppUITests;
+			productName = PamidalaAlbumAppUITests;
+			productReference = 4A5ACF8729D3651F0021CA9A /* PamidalaAlbumAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A5ACF5F29D3651E0021CA9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4A5ACF6629D3651E0021CA9A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					4A5ACF7C29D3651F0021CA9A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4A5ACF6629D3651E0021CA9A;
+					};
+					4A5ACF8629D3651F0021CA9A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4A5ACF6629D3651E0021CA9A;
+					};
+				};
+			};
+			buildConfigurationList = 4A5ACF6229D3651E0021CA9A /* Build configuration list for PBXProject "PamidalaAlbumApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A5ACF5E29D3651E0021CA9A;
+			productRefGroup = 4A5ACF6829D3651E0021CA9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A5ACF6629D3651E0021CA9A /* PamidalaAlbumApp */,
+				4A5ACF7C29D3651F0021CA9A /* PamidalaAlbumAppTests */,
+				4A5ACF8629D3651F0021CA9A /* PamidalaAlbumAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A5ACF6529D3651E0021CA9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5ACF7729D3651F0021CA9A /* LaunchScreen.storyboard in Resources */,
+				4A5ACF7429D3651F0021CA9A /* Assets.xcassets in Resources */,
+				4A5ACF7229D3651E0021CA9A /* Main.storyboard in Resources */,
+				741E880129D403290025E1F7 /* PhotoView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5ACF7B29D3651F0021CA9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5ACF8529D3651F0021CA9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A5ACF6329D3651E0021CA9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5ACF6F29D3651E0021CA9A /* RootVC.swift in Sources */,
+				4ADED35929D38527002A480C /* model.swift in Sources */,
+				741E87FF29D403100025E1F7 /* PhotoView.swift in Sources */,
+				4ADED35729D384E5002A480C /* ImageDescVC.swift in Sources */,
+				4A5ACF6B29D3651E0021CA9A /* AppDelegate.swift in Sources */,
+				4A5ACF6D29D3651E0021CA9A /* SceneDelegate.swift in Sources */,
+				4ADED35529D384A4002A480C /* AlbumVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5ACF7929D3651F0021CA9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5ACF8229D3651F0021CA9A /* PamidalaAlbumAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5ACF8329D3651F0021CA9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5ACF8C29D3651F0021CA9A /* PamidalaAlbumAppUITests.swift in Sources */,
+				4A5ACF8E29D3651F0021CA9A /* PamidalaAlbumAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A5ACF7F29D3651F0021CA9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A5ACF6629D3651E0021CA9A /* PamidalaAlbumApp */;
+			targetProxy = 4A5ACF7E29D3651F0021CA9A /* PBXContainerItemProxy */;
+		};
+		4A5ACF8929D3651F0021CA9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A5ACF6629D3651E0021CA9A /* PamidalaAlbumApp */;
+			targetProxy = 4A5ACF8829D3651F0021CA9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A5ACF7029D3651E0021CA9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A5ACF7129D3651E0021CA9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A5ACF7529D3651F0021CA9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A5ACF7629D3651F0021CA9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A5ACF8F29D3651F0021CA9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A5ACF9029D3651F0021CA9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A5ACF9229D3651F0021CA9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PamidalaAlbumApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaAlbumApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A5ACF9329D3651F0021CA9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PamidalaAlbumApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaAlbumApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A5ACF9529D3651F0021CA9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaAlbumAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PamidalaAlbumApp.app/PamidalaAlbumApp";
+			};
+			name = Debug;
+		};
+		4A5ACF9629D3651F0021CA9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaAlbumAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PamidalaAlbumApp.app/PamidalaAlbumApp";
+			};
+			name = Release;
+		};
+		4A5ACF9829D3651F0021CA9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaAlbumAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PamidalaAlbumApp;
+			};
+			name = Debug;
+		};
+		4A5ACF9929D3651F0021CA9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northwest.PamidalaAlbumAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PamidalaAlbumApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A5ACF6229D3651E0021CA9A /* Build configuration list for PBXProject "PamidalaAlbumApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5ACF8F29D3651F0021CA9A /* Debug */,
+				4A5ACF9029D3651F0021CA9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A5ACF9129D3651F0021CA9A /* Build configuration list for PBXNativeTarget "PamidalaAlbumApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5ACF9229D3651F0021CA9A /* Debug */,
+				4A5ACF9329D3651F0021CA9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A5ACF9429D3651F0021CA9A /* Build configuration list for PBXNativeTarget "PamidalaAlbumAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5ACF9529D3651F0021CA9A /* Debug */,
+				4A5ACF9629D3651F0021CA9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A5ACF9729D3651F0021CA9A /* Build configuration list for PBXNativeTarget "PamidalaAlbumAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5ACF9829D3651F0021CA9A /* Debug */,
+				4A5ACF9929D3651F0021CA9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A5ACF5F29D3651E0021CA9A /* Project object */;
+}

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wd0-lS-Ttk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="fth-IV-7YT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wd0-lS-Ttk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Z9U-Hw-k1D">
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cxw-Do-CFk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVT-Fk-BMl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
+        </scene>
+        <!--My album-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootVC" customModule="PamidalaAlbumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lpS-e2-PDj" userLabel="LoginSV">
+                                <rect key="frame" x="0.0" y="381" width="414" height="134"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AT3-Ug-WOe">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UdR-55-rQw">
+                                        <rect key="frame" x="0.0" y="42" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="87V-NP-Fy2" userLabel="LoginBTNSV">
+                                        <rect key="frame" x="0.0" y="84" width="414" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFv-cJ-C38">
+                                                <rect key="frame" x="0.0" y="0.0" width="132.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqD-lp-qBm">
+                                                <rect key="frame" x="140.5" y="0.0" width="133" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                                <connections>
+                                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rnI-ua-L4d"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJ3-q7-SQe">
+                                                <rect key="frame" x="281.5" y="0.0" width="132.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lpS-e2-PDj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8f1-q1-ssz"/>
+                            <constraint firstItem="lpS-e2-PDj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9WY-Aa-cw4"/>
+                            <constraint firstItem="lpS-e2-PDj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gLA-KC-bhR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My album" prompt="Hi there! Welcome to " id="iPC-Ep-Ge7"/>
+                    <connections>
+                        <outlet property="loginBTN" destination="dqD-lp-qBm" id="ZFx-u1-I5C"/>
+                        <outlet property="passwordTF" destination="UdR-55-rQw" id="sY1-FN-OxH"/>
+                        <outlet property="userNameTF" destination="AT3-Ug-WOe" id="VEK-2Z-Ai9"/>
+                        <segue destination="mHO-dx-ofO" kind="push" identifier="showAlbum" id="pMt-PX-yjz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="1200"/>
+        </scene>
+        <!--Album-->
+        <scene sceneID="gfk-nY-wBX">
+            <objects>
+                <viewController id="mHO-dx-ofO" customClass="AlbumVC" customModule="PamidalaAlbumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rJm-XV-Jc1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" minimumZoomScale="0.040000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Vxi-X9-Cdx">
+                                <rect key="frame" x="0.0" y="92" width="414" height="804"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fD9-1n-6Xg" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GxS-UR-75z" userLabel="AlbumSV">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8ut-L5-LjO" userLabel="G1SV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+                                                        <subviews>
+                                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oN-M4-ujW" customClass="PhotoView" customModule="PamidalaAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="294"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwD-rg-dbJ" customClass="PhotoView" customModule="PamidalaAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="211" y="0.0" width="203" height="294"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-Mc-N1k" userLabel="G2SV">
+                                                        <rect key="frame" x="0.0" y="302" width="414" height="294"/>
+                                                        <subviews>
+                                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyl-9A-U3K" customClass="PhotoView" customModule="PamidalaAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RD5-ex-Wim" customClass="PhotoView" customModule="PamidalaAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="211" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HPa-Ps-Jcu" userLabel="G3SV">
+                                                        <rect key="frame" x="0.0" y="604" width="414" height="294"/>
+                                                        <subviews>
+                                                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8BP-oC-gGS" customClass="PhotoView" customModule="PamidalaAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YE-Dm-beS" customClass="PhotoView" customModule="PamidalaAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="211" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nSS-jH-b5H" userLabel="G4SV">
+                                                        <rect key="frame" x="0.0" y="906" width="414" height="294"/>
+                                                        <subviews>
+                                                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPT-Ka-LP6" customClass="PhotoView" customModule="PamidalaAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                            <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBQ-hI-1tN" customClass="PhotoView" customModule="PamidalaAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="211" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="GxS-UR-75z" firstAttribute="top" secondItem="fD9-1n-6Xg" secondAttribute="top" id="BmX-0D-tmK"/>
+                                            <constraint firstAttribute="trailing" secondItem="GxS-UR-75z" secondAttribute="trailing" id="KEn-21-kTE"/>
+                                            <constraint firstAttribute="height" constant="1200" id="aaO-ti-4yN"/>
+                                            <constraint firstItem="GxS-UR-75z" firstAttribute="leading" secondItem="fD9-1n-6Xg" secondAttribute="leading" id="h77-Gk-Wtt"/>
+                                            <constraint firstAttribute="bottom" secondItem="GxS-UR-75z" secondAttribute="bottom" id="w2P-rR-FmR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fD9-1n-6Xg" firstAttribute="top" secondItem="Vxi-X9-Cdx" secondAttribute="top" id="CvQ-Sx-74Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="fD9-1n-6Xg" secondAttribute="bottom" id="J34-XO-662"/>
+                                    <constraint firstItem="fD9-1n-6Xg" firstAttribute="leading" secondItem="Vxi-X9-Cdx" secondAttribute="leading" id="V32-BK-duF"/>
+                                    <constraint firstAttribute="trailing" secondItem="fD9-1n-6Xg" secondAttribute="trailing" id="kjg-WA-RNE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L7D-Em-zr6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vxi-X9-Cdx" firstAttribute="trailing" secondItem="L7D-Em-zr6" secondAttribute="trailing" id="BHn-HL-a3X"/>
+                            <constraint firstItem="Vxi-X9-Cdx" firstAttribute="top" secondItem="L7D-Em-zr6" secondAttribute="top" id="CYc-PC-5Uj"/>
+                            <constraint firstItem="fD9-1n-6Xg" firstAttribute="width" secondItem="rJm-XV-Jc1" secondAttribute="width" id="Sh7-5D-FNg"/>
+                            <constraint firstItem="Vxi-X9-Cdx" firstAttribute="leading" secondItem="L7D-Em-zr6" secondAttribute="leading" id="dGg-Qe-waC"/>
+                            <constraint firstAttribute="bottom" secondItem="Vxi-X9-Cdx" secondAttribute="bottom" id="pNH-2h-vEV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Album" id="VYD-HA-U2y"/>
+                    <connections>
+                        <outlet property="contentView" destination="fD9-1n-6Xg" id="1sG-Tm-eaY"/>
+                        <outlet property="scrollView" destination="Vxi-X9-Cdx" id="X9I-Qh-c1i"/>
+                        <outlet property="v1" destination="6oN-M4-ujW" id="3uB-Hb-2g1"/>
+                        <outlet property="v2" destination="nwD-rg-dbJ" id="aJk-gF-TW9"/>
+                        <outlet property="v3" destination="Iyl-9A-U3K" id="0yt-sR-NNg"/>
+                        <outlet property="v4" destination="RD5-ex-Wim" id="ogh-W6-zlC"/>
+                        <outlet property="v5" destination="8BP-oC-gGS" id="LDj-Aw-hFS"/>
+                        <outlet property="v6" destination="6YE-Dm-beS" id="KeX-b1-7Es"/>
+                        <outlet property="v7" destination="CPT-Ka-LP6" id="iHR-Vc-Cg6"/>
+                        <outlet property="v8" destination="LBQ-hI-1tN" id="P5w-zP-ECp"/>
+                        <segue destination="qi6-aE-Lyz" kind="push" identifier="imageDeets" id="UX1-ha-SGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jci-ZX-HHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2081" y="1200"/>
+        </scene>
+        <!--Image description-->
+        <scene sceneID="vDj-oJ-U3k">
+            <objects>
+                <viewController id="qi6-aE-Lyz" customClass="ImageDescVC" customModule="PamidalaAlbumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EIe-1a-4SR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Me4-mi-ag3" userLabel="ImageDescSV">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tLT-gb-Udn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="526.5"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogk-1m-xHP">
+                                        <rect key="frame" x="0.0" y="534.5" width="414" height="217.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tLT-gb-Udn" firstAttribute="height" secondItem="Me4-mi-ag3" secondAttribute="height" multiplier="0.7" id="59d-IU-xwO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HfX-X8-zxq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Me4-mi-ag3" firstAttribute="leading" secondItem="HfX-X8-zxq" secondAttribute="leading" id="NGh-qg-BoL"/>
+                            <constraint firstItem="Me4-mi-ag3" firstAttribute="top" secondItem="HfX-X8-zxq" secondAttribute="top" id="YVz-TR-oPp"/>
+                            <constraint firstAttribute="bottom" secondItem="Me4-mi-ag3" secondAttribute="bottom" id="cYC-Dd-4P7"/>
+                            <constraint firstItem="HfX-X8-zxq" firstAttribute="trailing" secondItem="Me4-mi-ag3" secondAttribute="trailing" id="paj-eq-pj6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image description" id="tWQ-yc-Fq3"/>
+                    <connections>
+                        <outlet property="descTV" destination="ogk-1m-xHP" id="5Gb-tr-xSb"/>
+                        <outlet property="imageView" destination="tLT-gb-Udn" id="Hqb-aj-zee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaS-gn-fwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3106" y="1200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
