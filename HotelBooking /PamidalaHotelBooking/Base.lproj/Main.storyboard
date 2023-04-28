@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hotel BookingVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HotelBookingVC" customModule="PamidalaHotelBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="27f-lv-dhO" userLabel="BigContainerSV">
+                                <rect key="frame" x="0.0" y="54" width="428" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Booking™️" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBb-hp-o48">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="81.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zMP-ac-Iu3" userLabel="Text Fields">
+                                        <rect key="frame" x="0.0" y="89.666666666666671" width="428" height="163.66666666666663"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9K-fw-bdy">
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="49.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No. of nights" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBP-O1-Xz1">
+                                                <rect key="frame" x="0.0" y="57.333333333333343" width="428" height="49.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No. of rooms" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8G0-ud-aSK">
+                                                <rect key="frame" x="0.0" y="114.66666666666666" width="428" height="49"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-ci-qSE">
+                                        <rect key="frame" x="0.0" y="261.33333333333331" width="428" height="163.66666666666669"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="07i-4U-7RS">
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="78"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRF-Hp-dQd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170.66666666666666" height="78"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Single Bed"/>
+                                                        <connections>
+                                                            <action selector="bookSingleBed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUk-yi-5gZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khT-ry-bFN">
+                                                        <rect key="frame" x="257.66666666666669" y="0.0" width="170.33333333333331" height="78"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Double Bed"/>
+                                                        <connections>
+                                                            <action selector="bookDoubleBed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c76-Sc-q4q"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="Dlb-uL-99O">
+                                                <rect key="frame" x="0.0" y="86" width="428" height="77.666666666666686"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-YI-SG5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="77.666666666666671"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Check-in"/>
+                                                        <connections>
+                                                            <action selector="checkInRoom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLY-nl-ExC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1k2-4p-gky">
+                                                        <rect key="frame" x="253.66666666666663" y="0.0" width="174.33333333333337" height="77.666666666666671"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Cancle Booking"/>
+                                                        <connections>
+                                                            <action selector="cancleBooking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="irK-q0-ltl"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="nbn-hy-gGq">
+                                        <rect key="frame" x="0.0" y="433.00000000000006" width="428" height="204.66666666666669"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="suR-6a-Tgc">
+                                        <rect key="frame" x="0.0" y="645.66666666666663" width="428" height="172.33333333333337"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nbn-hy-gGq" firstAttribute="height" secondItem="27f-lv-dhO" secondAttribute="height" multiplier="0.25" id="EbG-Sy-0Pd"/>
+                                    <constraint firstItem="dBb-hp-o48" firstAttribute="height" secondItem="27f-lv-dhO" secondAttribute="height" multiplier="0.1" id="LCs-5G-YOI"/>
+                                    <constraint firstItem="YC6-ci-qSE" firstAttribute="height" secondItem="27f-lv-dhO" secondAttribute="height" multiplier="0.2" id="Tih-3z-qSM"/>
+                                    <constraint firstItem="zMP-ac-Iu3" firstAttribute="height" secondItem="27f-lv-dhO" secondAttribute="height" multiplier="0.2" id="b5L-Rw-GPO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="27f-lv-dhO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0eV-Mg-y99"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="27f-lv-dhO" secondAttribute="bottom" constant="20" id="bxh-Hf-vKj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="27f-lv-dhO" secondAttribute="trailing" id="ieU-b6-pIe"/>
+                            <constraint firstItem="27f-lv-dhO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="sbg-B5-37W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SingleBedBTN" destination="sRF-Hp-dQd" id="rxt-F8-yg0"/>
+                        <outlet property="bedIMG" destination="nbn-hy-gGq" id="2vm-Gd-ld1"/>
+                        <outlet property="doubleBedBTN" destination="khT-ry-bFN" id="ZbI-Fh-Zi6"/>
+                        <outlet property="fullNameTF" destination="b9K-fw-bdy" id="bvW-oP-cHW"/>
+                        <outlet property="messageTV" destination="suR-6a-Tgc" id="VLS-ME-mmS"/>
+                        <outlet property="noOfNightsTF" destination="DBP-O1-Xz1" id="7iG-7M-LoN"/>
+                        <outlet property="noOfRoomsTF" destination="8G0-ud-aSK" id="foA-Yg-O9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sample" width="58" height="96.333335876464844"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
